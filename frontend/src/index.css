@@ -1,0 +1,57 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0f1e;
+  --surface: #111827;
+  --surface2: #1f2937;
+  --border: #374151;
+  --text: #f9fafb;
+  --text2: #9ca3af;
+  --text3: #6b7280;
+  --accent: #3b82f6;
+  --accent2: #60a5fa;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --radius: 12px;
+  --radius-lg: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+input, select {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px 14px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+  -webkit-appearance: none;
+}
+input:focus, select:focus { border-color: var(--accent); }
+input[type=range] {
+  padding: 0;
+  height: 6px;
+  background: var(--border);
+  cursor: pointer;
+  border: none;
+  border-radius: 99px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+button { font-family: inherit; cursor: pointer; }
