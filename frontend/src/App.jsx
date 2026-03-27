@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API = import.meta.env.VITE_API_URL 
 
 const FIELDS = [
   { key: 'pregnancies',      label: 'Pregnancies',            min: 0,   max: 17,  step: 1,    unit: '',        tip: 'Number of times pregnant' },
