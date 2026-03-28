@@ -5,6 +5,8 @@ An ML-powered web app that predicts diabetes risk from health parameters using a
 **Tech Stack:** React + Vite · FastAPI · scikit-learn · Pima Indians Dataset  
 **Deploy:** Frontend on Vercel · Backend on Render
 
+[Live]([url](https://diabetes-risk-predictor-cyan.vercel.app/))
+
 ---
 
 ## Project Structure
